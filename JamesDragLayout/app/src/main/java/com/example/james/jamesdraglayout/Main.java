@@ -79,7 +79,7 @@ public class Main extends Activity implements AdapterView.OnItemClickListener, V
         myRelativeLayout = (MyRelativeLayout) findViewById(R.id.relativeLayout);
 
         username.setText("admin");
-        actionTitle.setText("Pet Management");
+        actionTitle.setText("Management");
 
         petListView = (ListViewCompat) findViewById(R.id.listViewPet);
         lv = (ListView) findViewById(R.id.lv);
@@ -143,7 +143,7 @@ public class Main extends Activity implements AdapterView.OnItemClickListener, V
 //        });
 
         lv.setAdapter(new ArrayAdapter<String>(this,
-                R.layout.item_text, new String[]{"Pet Management", "Log", "Settings", "Logout"}));
+                R.layout.item_text, new String[]{"Management", "Log", "Settings", "Logout"}));
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1,
